@@ -420,10 +420,40 @@ h3{
     flex-direction: column;
     gap: 0.5rem;
 }
-
-
-
 /* footer styling ends here */
+
+
+
+/* Desktops ≥1281px */
+@media (max-width: 1281px) {
+    #snippet-1 .snippet-1-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+
+}
+
+#snippet-1 .snippet-1-content {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem; */
+
+    flex-direction: column;
+}
+}
+
+@media (min-width: 1025px) and (min-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
 
 
 
@@ -439,6 +469,10 @@ h3{
     flex-direction: column;
     width: 90%;
     height: auto;
+  }
+
+  #companies .companies-content{
+    flex-direction: column;
   }
 
   .left, .right {
@@ -487,10 +521,42 @@ h3{
     gap: 1.5rem;
     text-align: center;
 }
+
+#snippet-1 .snippet-1-content{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* space between stacked items */
+    text-align: center;
+  }
+
+  #footer .footer-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #footer .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #footer .footer-logo img {
+    margin-bottom: 1rem;
+  }
+
+  #footer .footer-socials {
+    margin-top: 1rem;
+  }
 }
 
 /* For small phones (≤ 480px) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   body {
     font-size: 0.9rem;
   }
@@ -520,7 +586,7 @@ h3{
   .right-content p {
     font-size: 0.8rem;
   }
-}
+} */
   /* .end-content{
     display: flex;
     justify-content: center;
@@ -530,18 +596,18 @@ h3{
     gap: 4rem;
 } */
 
-.end-cta
+/* .end-cta
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* padding: 0.8rem 1.5rem; */
     /* flex-direction: column; */
     /* /* gap: 0.2rem; */
     /* margin-bottom: 1.5rem; */
-}
+/* } */
 
-#snippet-3 .snippet-3-content {
+/* #snippet-3 .snippet-3-content {
     flex-direction: column;
     align-items: center;
   }
@@ -552,7 +618,7 @@ h3{
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
-}
+} */
 
 /* For very small phones (≤ 320px) */
 @media (max-width: 320px) {
@@ -606,3 +672,33 @@ h3{
     text-align: center;
 }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  #companies .companies-content{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  #companies .companies-content{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  #snippet-3 .snippet-3-content{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #companies .companies-content{
+    flex-direction: column;
+  }
+}
+
